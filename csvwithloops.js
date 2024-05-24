@@ -11,7 +11,9 @@ let everythingArray = everything.split('\n');
 console.log(everythingArray);
 
 //doing this by using built in methods and arrays
-
+for(let i=0; i<everythingArray.length; i++) {
+    console.log(everythingArray[i])
+}
 
 /*
 
@@ -19,7 +21,7 @@ This is able to grab the first word, but I could not send it to variables withou
 I wanted to make a loop to assign variables but I couldn't get the variables to assing in the scope of the loop.
 */
 let cell1 = '';
-let cell2 = '';
+
 for(let i =0; i<allTheThings.length; i++) {
     if (allTheThings[i]!=',') {
         cell1=cell1+allTheThings[i];
